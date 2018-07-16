@@ -1,0 +1,48 @@
+.contact{
+    display: flex;
+    flex-direction: row;
+}
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 16px 68px;
+
+}
+.contact-title{
+    width: 100%;
+    text-align: center;
+}
+.contact-item{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 5px;
+
+}
+.contact-email{
+   flex: 1 1 900px;
+   padding: 15px;
+   margin: 0 5px;
+   border: 1px solid $accent-alt;
+   border-top-left-radius: 5px;
+   border-bottom-left-radius: 5px;
+}
+.contact-submit{
+   flex: 1 1 200px;
+   padding: 10px;
+   border: none;
+   background: $accent-alt;
+   color: $text-white;
+   border-top-right-radius: 5px;
+   border-bottom-right-radius: 5px;
+   border: 1px solid $accent-alt;
+
+}
+.contact-submit:hover{
+    background: $text-white;
+    color: $accent-alt;
+    border: 1px solid $accent-alt;
+
+ }

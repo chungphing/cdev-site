@@ -1,0 +1,29 @@
+//for social item
+.social{
+    display: flex;
+    flex-direction: row;
+    background: $social-bg;
+    color: $social-color;
+}
+
+.social .social-item{
+    padding: 20px;
+    margin: 20px;
+    fill: #fbfbfb;
+}
+.social div svg {
+    cursor: pointer;
+    transition: fill .2s ease;
+}
+.social-facebook:hover {
+    fill: #2162a2;
+}
+.social-twitter:hover {
+    fill: #0aa2e6;
+}
+.social-linkedin:hover {
+    fill: #3F51B5;
+}
+.social-youtube:hover {
+    fill: #FF5252;
+}
