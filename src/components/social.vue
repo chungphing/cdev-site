@@ -1,5 +1,5 @@
 <template>
-    <div class="social-container container">
+    <div class="social-container">
       <div class="social">
         <div class="social-item">
         <svg class="social-facebook" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 16 16">

@@ -12,6 +12,7 @@
             v-bind:description="service.description"
             v-bind:color="service.color"
             v-bind:route="service.route"
+            :tabindex="service.id"
           ></service-item>
         </div>
     </div>
@@ -46,13 +47,12 @@ export default {
 @import '../styles/variables';
 .service {
     display: flex;
-    flex-direction: column;
     align-items: center;
   }
   .service-title{
     width: 100%;
     text-align: center;
-  }
+}
 @media only screen and (max-width: 600px) {
    .service{
       flex-direction: column;
@@ -64,7 +64,7 @@ export default {
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 800px) {
     .service{
       flex-direction: row;
     }

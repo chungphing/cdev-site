@@ -1,9 +1,7 @@
 <template>
-    <div class="service-item" :class="color">
+    <div class="service-item" :class="color" >
       <div class="service-thumb-container">
-        <div class="service-thumb">
             <i class="fas fa-5x" :class="icon"></i>
-        </div>
       </div>
       <div class="service-text">
         <h1>{{ title }}</h1>
@@ -43,12 +41,11 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: $background;
     width: 100%;
     margin: 20px;
-    -webkit-box-shadow: 0px 0px 2px -1px rgba(163,163,163,1);
-      -moz-box-shadow: 0px 0px 2px -1px rgba(163,163,163,1);
-      box-shadow: 0px 0px 2px -1px rgba(163,163,163,1);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s cubic-bezier(0,0,0.3,1);
+
   }
 
   .service-title{
@@ -57,11 +54,6 @@ export default {
     background: #fbfbfb;
 
   }
-
-  .service-thumb {
-    width: 200px;
-  }
-
   .red{
     color: $red;
   }
@@ -76,17 +68,35 @@ export default {
     line-height: 1.2;
   }
   .service-thumb-container {
+    width: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  .service-thumb{
-    padding: 50px;
+    padding: 28px;
     transition: transform 0.3s cubic-bezier(0,0,0.3,1);
   }
   .service-item:hover .service-thumb img{
           transform: scale(1.1);
   }
+  .service-item:hover{
+      -webkit-box-shadow: 0px 4px 20px rgba(163,163,163,1);
+      -moz-box-shadow: 0px 4px 20px rgba(163,163,163,1);
+      box-shadow: 0px 4px 20px rgba(163,163,163,1);
+      background: $background;
+      transform: scale(1.05);
+    }
+    .red:hover,{
+      background-color: $red;
+      color: white;
+    }
+    .blue:hover{
+      background-color: $blue;
+      color: white;
+    }
+    .green:hover{
+      background-color: $green;
+      color: white;
+    }
 
   .service-item h3 {
     margin: 8px 0;
@@ -115,37 +125,29 @@ export default {
     flex: 2 1 auto;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
+  .service-item {
+    flex-direction: row;
+    margin: 5px;
+  }
+  .service-thumb-container{
+    flex: 1 1 auto;
+  }
+  .service-text{
+    flex: 2 1 auto;
+  }
+}
+@media only screen and (min-width: 800px) {
     .service-title{
       background: none;
     }
     .service-item{
       position: relative;
-      transition: all 0.3s cubic-bezier(0,0,0.3,1);
-      border-radius: 8px;
+      border-radius: 4px;
       align-items: flex-start;
       padding: 16px;
+      margin: 16px;
       align-items: center;
-    }
-
-    .service-item:hover{
-      -webkit-box-shadow: 0px 0px 20px -1px rgba(163,163,163,1);
-      -moz-box-shadow: 0px 0px 20px -1px rgba(163,163,163,1);
-      box-shadow: 0px 0px 20px -1px rgba(163,163,163,1);
-      background: $background;
-      transform: scale(1.05);
-    }
-    .red:hover{
-      background-color: $red;
-      color: white;
-    }
-    .blue:hover{
-      background-color: $blue;
-      color: white;
-    }
-    .green:hover{
-      background-color: $green;
-      color: white;
     }
 }
 </style>

@@ -75,7 +75,7 @@ export default {
 @media screen and (max-width: 600px) {
   // mobile
   .cta{
-    max-width: 50%;
+    max-width: 100%;
     padding: 16px 26px;
   }
   .logo-container{

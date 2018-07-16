@@ -19,6 +19,7 @@ export default {
   padding: 16px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
+  background-color: white;
 }
 
 .red{
