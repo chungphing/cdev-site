@@ -1,10 +1,12 @@
 
 /*start header */
 .header{
+    width: 100%;
     z-index: 10;
-      padding: 0 48px;
-      justify-content: space-between;
-      box-shadow: 0px 8px 15px rgba(83, 83, 83, 0.1);
+    padding: 0 48px;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.74);
+    box-shadow: 0px 8px 15px rgba(83, 83, 83, 0.1);
   }
   .header-branding-container{
       margin: 18px 0;

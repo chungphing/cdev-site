@@ -33,14 +33,15 @@ export default {
   justify-content: space-around;
   background: $text;
   color: white;
+  padding: 18px 0;
 }
 ul{
   list-style: none;
   margin: 4px;
+  padding: 0;
 }
 ul li{
-    text-align: left;
-
+  text-align: left;
   font-size: 12px;
   padding: 8px;
 }
@@ -48,5 +49,16 @@ h2{
   margin: 0;
   padding: 0;
   text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer{
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .footer{
+    flex-direction: row;
+  }
 }
 </style>

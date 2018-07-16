@@ -67,12 +67,16 @@ export default {
     text-align: start;
     line-height: 1.2;
   }
+  .service-text{
+    width: 100%;
+  }
   .service-thumb-container {
-    width: 150px;
     display: flex;
-    align-items: center;
+    width: 150px;
+    height: 150px;
+    flex-direction: column;
+    text-align: center;
     justify-content: center;
-    padding: 28px;
     transition: transform 0.3s cubic-bezier(0,0,0.3,1);
   }
   .service-item:hover .service-thumb img{
@@ -106,23 +110,11 @@ export default {
     flex-direction: row;
     margin: 0;
   }
-  .service-thumb-container{
-    flex: 1 1 auto;
-  }
-  .service-text{
-    flex: 2 1 auto;
-  }
 }
 @media only screen and (max-width: 768px) {
   .service-item {
     flex-direction: row;
     margin: 5px;
-  }
-  .service-thumb-container{
-    flex: 1 1 auto;
-  }
-  .service-text{
-    flex: 2 1 auto;
   }
 }
 @media only screen and (max-width: 768px) {

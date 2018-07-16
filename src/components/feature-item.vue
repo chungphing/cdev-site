@@ -67,6 +67,7 @@ export default {
 }
 .feature-thumb-container img {
     width: 350px;
+    max-width: 350px;
     border-radius: 16px;
     box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
     transition: all 0.3s cubic-bezier(0,0,0.3,1);
@@ -85,6 +86,9 @@ export default {
   }
   .feature-item .feature-thumb-container{
      order: 0;
+  }
+  .feature-thumb-container img {
+    width: 100%;
   }
 }
 @media only screen and (min-width: 800px) {
@@ -105,7 +109,13 @@ export default {
       order: 2;
   }
   .feature-thumb-container{
-    margin: 18px 48px;
+    margin: 18px 24px 18px 18px;
+  }
+  .feature-item:nth-child(even) .feature-thumb-container{
+    margin: 18px 18px 18px 24px;
+  }
+  .feature-text{
+    margin: 18px;
   }
 }
 </style>

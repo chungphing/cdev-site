@@ -4,9 +4,6 @@
       <div class="overlay" v-if="showTopMenu">
       <div class="overlay-list">
           <div>
-              <a href="#" v-on:click="showTopMenu = false" class="overlay-item">
-                Close
-              </a>
               <a href="#service" v-on:click="showTopMenu = false" class="overlay-item">
                 Service
               </a>
@@ -34,10 +31,9 @@
             Contact Us
             </a>
       </div>
-      <button class="hamburger toggleTopMenu" type="button" @click="showTopMenu = !showTopMenu">
+      <button class="hamburger hamburger--collapse" type="button" @click="showTopMenu = !showTopMenu" :class="isActive">
             <span class="hamburger-box">
               <span class="hamburger-inner"></span>
-              button
             </span>
       </button>
   </div>
@@ -46,15 +42,15 @@
 <script>
 export default {
   name: 'Topbar',
-  methods: {
-    scrollto: function () {
-      document.querySelector('.social').scrollIntoView({
-        behavior: 'smooth'
-      })
+  computed: {
+    isActive: function () {
+      console.log('is active')
+      if (this.showTopMenu) {
+        return 'is-active'
+      } else return ''
     }
   },
   props: {
-    toggleTopMenu: false,
     showTopMenu: true
   }
 }
@@ -62,6 +58,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
+@import '../styles/hamburgers/hamburgers';
 @import '../styles/variables';
 @import '../styles/fluid-type';
 @import '../styles/header';
@@ -81,4 +78,7 @@ export default {
   opacity: 0;
 }
 
+.hamburger{
+  z-index: 100;
+}
 </style>
