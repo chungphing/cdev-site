@@ -12,40 +12,36 @@ export default {
 @import '../../styles/variables';
 
 .cdev-button{
-  border-radius: 5px;
+  border-radius: 4px;
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 600;
+  border: none;
   padding: 16px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
   background-color: white;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
 }
 
 .red{
-  border: 1px solid $red;
   color: $red;
 }
 .red:hover{
-  border: 1px solid $red;
   background-color: lighten( $red, 10% );
   color: #fff;
 }
 .blue{
-  border: 1px solid $blue;
   color: $blue;
 }
 .blue:hover{
-  border: 1px solid $blue;
   background-color: lighten( $blue, 10% );
   color: #fff;
 }
 .green{
-  border: 1px solid $green;
   color: $green;
 }
 .green:hover{
-  border: 1px solid $green;
   background-color: lighten( $green, 10% );
   color: #fff;
 }

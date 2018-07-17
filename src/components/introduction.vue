@@ -1,14 +1,16 @@
 
 <template>
-  <div class="introduction">
+  <div  class="introduction">
     <div class="banner-panel">
       <h1 class="banner-text">We are CDEV TEC</h1>
       <button class="cta">Learn More</button>
     </div>
+    <div class="bg"></div>
   </div>
 </template>
 
 <script>
+
 export default {
   name: 'Introduction',
   props: {
@@ -26,11 +28,11 @@ export default {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 25px;
   text-align: center;
   height: 700px;
-  background-image: url('/static/bg/marvin-meyer-571072.jpg');
+   background-image: url('/static/bg/marvin-meyer-571072.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .banner-panel{
   margin: 58px;
@@ -39,21 +41,25 @@ export default {
   align-items: center;
   justify-content: center;
   text-align: center;
+  z-index: 2;
 }
 .logo-container{
   display: flex;
   align-items: center;
+  font-weight: 900;
   justify-content: center;
   max-width: 200px;
 }
 .banner-text{
-  font-weight: bolder;
   font-size: 70px;
-  color: white;
+  display: block;
+  padding: 20px;
+  font-weight: bolder;
+  color: rgba(235, 233, 233, 0.726);
+  mix-blend-mode: screen;
 }
 .cta{
   max-width: 400px;
-  margin: 16px 24px;
   border: 0;
   border-radius: 50px;
   background: $accent;
@@ -61,6 +67,7 @@ export default {
   letter-spacing: 2px;
   text-transform: uppercase;
   font-weight: 600;
+  padding: 16px 50px;
   cursor: pointer;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease 0s;
@@ -71,7 +78,6 @@ export default {
   color: black;
   transform: translateY(-3px);
 }
-
 @media screen and (max-width: 600px) {
   // mobile
   .cta{

@@ -5,7 +5,6 @@
       <feature></feature>
       <team></team>
       <cta></cta>
-      <social></social>
     </div>
 </template>
 
@@ -31,7 +30,6 @@ export default {
   }
 }
 </script>
-
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
 </style>

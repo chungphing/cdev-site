@@ -5,8 +5,8 @@
       </div>
       <div class="service-text">
         <h1>{{ title }}</h1>
-      <p class="description"> {{ description }}</p>
-      <core-button v-on:route="routeto" title="Learn more" :color="color"></core-button>
+        <p class="description"> {{ description }}</p>
+        <core-button v-on:route="routeto" title="Learn more" :color="color"></core-button>
       </div>
     </div>
 </template>
@@ -41,7 +41,6 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
     margin: 20px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
     transition: all 0.3s cubic-bezier(0,0,0.3,1);
@@ -52,7 +51,6 @@ export default {
     width: 100%;
     text-align: center;
     background: #fbfbfb;
-
   }
   .red{
     color: $red;
@@ -79,48 +77,35 @@ export default {
     justify-content: center;
     transition: transform 0.3s cubic-bezier(0,0,0.3,1);
   }
-  .service-item:hover .service-thumb img{
-          transform: scale(1.1);
+  .red:hover,{
+    background-color: $red;
+    color: white;
   }
-  .service-item:hover{
-      -webkit-box-shadow: 0px 4px 20px rgba(163,163,163,1);
-      -moz-box-shadow: 0px 4px 20px rgba(163,163,163,1);
-      box-shadow: 0px 4px 20px rgba(163,163,163,1);
-      background: $background;
-      transform: scale(1.05);
-    }
-    .red:hover,{
-      background-color: $red;
-      color: white;
-    }
-    .blue:hover{
-      background-color: $blue;
-      color: white;
-    }
-    .green:hover{
-      background-color: $green;
-      color: white;
-    }
+  .blue:hover{
+    background-color: $blue;
+    color: white;
+  }
+  .green:hover{
+    background-color: $green;
+    color: white;
+  }
 
   .service-item h3 {
     margin: 8px 0;
   }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
   .service-item {
     flex-direction: row;
     margin: 0;
+    width: 95%;
   }
 }
 @media only screen and (max-width: 768px) {
   .service-item {
     flex-direction: row;
     margin: 5px;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .service-item {
-    flex-direction: row;
-    margin: 5px;
+    width: 95%;
+    padding: 16px;
   }
   .service-thumb-container{
     flex: 1 1 auto;
@@ -135,11 +120,23 @@ export default {
     }
     .service-item{
       position: relative;
-      border-radius: 4px;
-      align-items: flex-start;
+      align-items: center;
       padding: 16px;
       margin: 16px;
       align-items: center;
+      width: 45%;
+    }
+    .service-text{
+      align-self: flex-start;
+    }
+     .service-item:hover .service-thumb img{
+          transform: scale(1.1);
+      }
+    .service-item:hover{
+        -webkit-box-shadow: 0px 4px 20px rgba(163,163,163,1);
+        -moz-box-shadow: 0px 4px 20px rgba(163,163,163,1);
+        box-shadow: 0px 4px 20px rgba(163,163,163,1);
+        transform: scale(1.05);
     }
 }
 </style>

@@ -48,19 +48,20 @@ export default {
 .service {
     display: flex;
     align-items: center;
+    justify-content: space-around;
   }
   .service-title{
     width: 100%;
     text-align: center;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
    .service{
       flex-direction: column;
     }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
    .service{
-      flex-direction: column;
+      flex-direction: row;
     }
 }
 

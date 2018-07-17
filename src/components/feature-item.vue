@@ -69,7 +69,7 @@ export default {
     width: 350px;
     max-width: 350px;
     border-radius: 16px;
-    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
     transition: all 0.3s cubic-bezier(0,0,0.3,1);
 }
 @media only screen and (max-width: 600px) {
@@ -96,7 +96,7 @@ export default {
       margin: 16px 68px;
   }
   .feature-item:hover .feature-thumb-container img{
-      box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.5);
+      box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
       transform: scale(1.05);
   }
   .feature-item:hover .feature-text{
