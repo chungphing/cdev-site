@@ -25,10 +25,10 @@
               Service
             </a>
             <a href="#team" class="header-item">
-            Our Team
+            Blog
             </a>
             <a href="#" class="header-item">
-            Contact Us
+            Contact
             </a>
       </div>
       <button class="hamburger hamburger--collapse" type="button" @click="showTopMenu = !showTopMenu" :class="isActive">

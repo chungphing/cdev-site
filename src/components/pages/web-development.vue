@@ -1,5 +1,5 @@
 <template>
-    <div class="web-development">
+    <div class="web-development pages">
         <h1>Web Development</h1>
     </div>
 </template>

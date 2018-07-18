@@ -20,6 +20,9 @@ export default {
   justify-content: center;
   margin: 28px;
 }
+ .contact{
+        flex-direction: column;
+    }
 @media only screen and (min-width: 768px) {
     .contact{
         flex-direction: column;

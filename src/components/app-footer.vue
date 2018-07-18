@@ -3,16 +3,16 @@
       <div>
         <h2>Services</h2>
       <ul>
-        <li>Web Development</li>
-        <li>Mobile Development</li>
-        <li>Tech Consultant</li>
+        <li><a href="#">Web Development</a></li>
+        <li><a href="#">Mobile Development</a></li>
+        <li><a href="#">Tech Consultant</a></li>
       </ul>
       </div>
       <div>
         <h2>Contact</h2>
         <ul>
-          <li>Email: chungphing@gmail.com</li>
-          <li>Phone: 011346333</li>
+          <li><a href="#">Email: chungphing@gmail.com</a></li>
+          <li><a href="#">Phone: 011346333</a></li>
         </ul>
       </div>
     </footer>
@@ -27,6 +27,10 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import '../styles/variables';
+a{
+  text-decoration: none;
+  color: white;
+}
 .footer{
   display: flex;
   flex-direction: row;
@@ -42,7 +46,7 @@ ul{
 }
 ul li{
   text-align: left;
-  font-size: 12px;
+  font-size: 14px;
   padding: 8px;
 }
 h2{

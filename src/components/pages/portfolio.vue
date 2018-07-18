@@ -1,6 +1,6 @@
 <template>
-    <div class="consultant">
-        <h1>Consultant</h1>
+    <div class="portfolio pages">
+        <h1>Portfolio</h1>
     </div>
 </template>
 

@@ -1,5 +1,5 @@
 <template>
-    <div class="consultant">
+    <div class="consultant pages">
         <h1>Consultant</h1>
     </div>
 </template>

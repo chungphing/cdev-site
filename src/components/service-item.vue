@@ -100,11 +100,11 @@ export default {
     width: 95%;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .service-item {
-    flex-direction: row;
+    flex-direction: column;
     margin: 5px;
-    width: 95%;
+    width: 90%;
     padding: 16px;
   }
   .service-thumb-container{
@@ -120,6 +120,7 @@ export default {
     }
     .service-item{
       position: relative;
+      border-radius: 4px;
       align-items: center;
       padding: 16px;
       margin: 16px;

@@ -1,5 +1,5 @@
 <template>
-    <div class="mobile-development">
+    <div class="mobile-development pages">
         <h1>Mobile development</h1>
     </div>
 </template>

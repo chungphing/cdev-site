@@ -55,8 +55,7 @@ export default {
   display: block;
   padding: 20px;
   font-weight: bolder;
-  color: rgba(235, 233, 233, 0.726);
-  mix-blend-mode: screen;
+  color: rgb(255, 253, 253);
 }
 .cta{
   max-width: 400px;
